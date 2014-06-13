@@ -12,7 +12,7 @@ object Util {
 
   def simpleStatusListener = new StatusListener() {
     def onStatus(status: Status) {
-      println(status.getText)
+      println(status.getId + ":" + status.getText)
     }
 
     def onDeletionNotice(statusDeletionNotice: StatusDeletionNotice) {}
