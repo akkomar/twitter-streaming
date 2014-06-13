@@ -6,7 +6,7 @@ object StatusStreamer {
     val twitterStream = new TwitterStreamFactory(Util.config).getInstance
     twitterStream.addListener(Util.simpleStatusListener)
     twitterStream.sample()
-    Thread.sleep(2000)
+    Thread.sleep(1000 * 60)
     twitterStream.cleanUp()
     twitterStream.shutdown()
   }
